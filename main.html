@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foro Azul</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <header>
+        <div class="container">
+            <h1>Foro Azul</h1>
+            <nav>
+                <a href="#" class="nav-link">Inicio</a>
+                <a href="#" class="nav-link">Tendencias</a>
+                <a href="#" class="nav-link">Nuevo</a>
+                <a href="#" class="nav-link">Perfil</a>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar...">
+                <button>🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="container">
+        <!-- Sección para publicar -->
+        <section class="post-section">
+            <h2>Crear una publicación</h2>
+            <form id="post-form">
+                <input type="text" id="post-title" placeholder="Título" required>
+                <textarea id="post-content" placeholder="Escribe tu publicación..." required></textarea>
+                <button type="submit">Publicar</button>
+            </form>
+        </section>
+
+        <!-- Lista de publicaciones -->
+        <section class="posts">
+            <h2>Publicaciones Recientes</h2>
+            <div id="posts-list">
+                <!-- Las publicaciones se cargarán aquí dinámicamente -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Foro Azul. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
